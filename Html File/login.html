@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            background-image: url(bodybg.jpg);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            padding: 18px;
+            border: 1px solid white;
+            border-radius: 5%;
+            border-collapse: separate;
+            border-spacing: 18px;
+            width: 300px;
+            color: rgb(163, 174, 177);
+            font-size: 20px;
+            background-image: url(tablebg.jpg);
+        }
+
+        .container1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .forget {
+            font-size: 17px;
+            color: white;
+        }
+
+        .forget:hover {
+            color: rgb(9, 144, 212);
+            cursor: pointer;
+        }
+
+        .Login {
+            margin-left: 90px;
+            width: 70px;
+            height: 25px;
+            color: white;
+            background-color: rgb(8, 8, 8);
+            transition: all 0.3s;
+        }
+
+        .SignUp {
+            margin-left: 90px;
+            width: 70px;
+            height: 25px;
+            color: white;
+            background-color: rgb(8, 8, 8);
+        }
+
+        input {
+            width: 260px;
+            height: 35px;
+            border: 1px solid black;
+        }
+
+        .container1 button:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+
+    </style>
+</head>
+<body>
+<table class="container1">
+    <tr>
+        <th>Login</th>
+    </tr>
+    <form id="loginForm" method="post" action="/login">
+        <tr>
+            <td>Email</td>
+        </tr>
+        <tr>
+            <td><input type="email" name="email" placeholder="Enter your Email" required/></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+        </tr>
+        <tr>
+            <td><input type="password" name="password" placeholder="Enter Your Password" required/></td>
+        </tr>
+        <tr>
+            <td><a href="forgetPassword.html" class="forget">Forget Password?</a></td>
+        </tr>
+        <tr>
+            <td><button type="submit" class="Login">Login</button></td>
+        </tr>
+    </form>
+    <tr>
+        <td>Don't have an account?</td>
+    </tr>
+    <tr>
+        <td><a href="SignUp.html"><button class="SignUp">SignUp</button></a></td>
+    </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SignUp</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body{
+      background-image: url('bodybg.jpg');
+    }
+
+    table {
+      margin-left: auto;
+      margin-right: auto;
+      border: 1px solid white;
+      border-radius: 5%;
+      border-collapse: separate;
+      border-spacing: 15px;
+      padding: 20px;
+      width: 300px;
+      font-size: 20px;
+      color: rgb(163, 174, 177);
+      background-image: url('tablebg.jpg');
+    }
+
+    .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    input{
+      width: 258px;
+      height: 35px;
+      border: 1px solid black;
+    }
+
+    .SignUp{
+      margin-left: 80px;
+      width: 70px;
+      height: 25px;
+      color: white;
+      background-color: rgb(8, 8, 8);
+      transition: all 0.3s;
+    }
+
+    .Login{
+      margin-left: 80px;
+      width: 70px;
+      height: 25px;
+      color: white;
+      background-color: rgb(8, 8, 8);
+      transition: 0.3s;
+    }
+    .container button:hover{
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+
+  </style>
+</head>
+<body>
+  <table class="container">
+    <tr>
+      <th>SignUp</th>
+    </tr>
+    <form action="/SignUp" method="post">
+      <tr>
+        <td>Name</td>
+      </tr>
+      <tr>
+        <td><input type="text" placeholder="Enter You Name" name="name"></td>
+      </tr>
+      <tr>
+        <td>Email</td>
+      </tr>
+      <tr>
+        <td><input type="email" placeholder="Enter You Email" name="email"></td>
+      </tr>
+      <tr>
+        <td>Mobile</td>
+      </tr>
+      <tr>
+        <td><input type="number" placeholder="Enter You Mobile Number" name="mobile"></td>
+      </tr>
+      <tr>
+        <td>Password</td>
+      </tr>
+      <tr>
+        <td><input type="password" placeholder="Enter You password" name="password"></td>
+      </tr>
+      <tr>
+        <td><button class="SignUp" type="submit">SignUp</button></td>
+      </tr>
+    </form>
+    <tr>
+      <td class="already">Already have an account?</td>
+    </tr>
+    <tr>
+      <td><a href="login.html"><button class="Login">Login</button></a></td>
+    </tr>
+  </table>
+</body>
+</html>
