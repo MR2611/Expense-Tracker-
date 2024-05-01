@@ -3,10 +3,10 @@ const router = express.Router();
 const path = require('path');
 const signup = require('./../models/signupModel');
 
-// router.use(express.static(path.join(__dirname, '..', 'Html File')));
+router.use(express.static(path.join(__dirname, '..', 'Html File')));
 
 router.get('/', (req,res) => {
-    res.sendFile(path.join(__dirname,'..', 'Html File', 'Signup.html'   ));
+    res.sendFile(path.join(__dirname,'..', 'Html File', 'Signup.html'));
 })
 
 router.post('/', async(req,res) => {

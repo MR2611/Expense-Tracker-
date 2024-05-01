@@ -5,11 +5,13 @@ const db = require('./Database/db');
 const signup = require('./models/signupModel');
 const login = require('./models/loginModel')
 const expense = require('./models/expenseModel');
+require('dotenv').config();
 
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+const PORT = process.env.PORT || 3000;
 
 // app.get('/home', (req,res) => {
 //     res.sendFile(path.join(__dirname,'expense.html'));
@@ -37,6 +39,6 @@ app.use('/expense', expenseRoute);
 //     res.send("Successfull");
 // })
 
-app.listen(5000, () =>{
+app.listen(PORT, () =>{
     console.log("App is running on port 5000");
 })
