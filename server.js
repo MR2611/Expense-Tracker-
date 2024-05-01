@@ -39,6 +39,6 @@ app.use('/expense', expenseRoute);
 //     res.send("Successfull");
 // })
 
-app.listen(PORT, () =>{
-    console.log("App is running on port 5000");
-})
+app.listen(PORT, () => {
+    console.log(`App is running on port ${PORT}`);
+});
